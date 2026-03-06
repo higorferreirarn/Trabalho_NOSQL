@@ -66,9 +66,9 @@ Atenção: O script aguarda 120 segundos no início para garantir que todos os b
 
 Setup Inicial:
 
-O script conecta nos quatro bancos, cria estruturas e relacionamentos necessários automaticamente.
+- O script conecta nos quatro bancos, cria estruturas e relacionamentos necessários automaticamente.
 
-Loop de Monitoramento:
+- Loop de Monitoramento:
 
 A cada ciclo:
 
@@ -77,6 +77,7 @@ Se não estiver (cache miss), consulta a API, atualiza o Redis e segue o fluxo.
 Salva o documento bruto no MongoDB.
 Insere o preço na tabela temporal do Cassandra.
 Consulta no Neo4j quais investidores acompanham cada moeda e simula alerta (imprime no terminal), atualizando a propriedade ultima_notificacao no relacionamento.
+
 Logs Visuais:
 
 O terminal exibe claramente cada ação realizada em cada banco.
@@ -100,13 +101,13 @@ Para adicionar mais investidores, edite a lista INVESTIDORES.
 
 ## 📚 Tecnologias Utilizadas
 
-Python
-Redis
-MongoDB
-Cassandra
-Neo4j
+- Python
+- Redis
+- MongoDB
+- Cassandra
+- Neo4j
 
 ## 📄 Licença
 
-Este projeto foi criado para fins educacionais.
+- Este projeto foi criado para fins educacionais.
 
